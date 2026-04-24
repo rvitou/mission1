@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Course</title>
+</head>
+<body style="font-family: Arial; background-color: #f4f6f9;">
+
+<h2 style="text-align:center; color:#333;">📚 Register New Course</h2>
+
+<div style="width:400px; margin: auto; background:white; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit" 
+        style="width:100%; padding:10px; background:#007bff; color:white; border:none; border-radius:5px;">
+        Save Course
+    </button>
+</form>
+
+</div>
+
+</body>
+</html>
